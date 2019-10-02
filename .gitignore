@@ -1,0 +1,6 @@
+# Trash folder (for experiments)
+test/
+test/*
+
+# Ctags
+tags
