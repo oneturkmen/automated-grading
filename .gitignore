@@ -2,5 +2,11 @@
 test/
 test/*
 
+tests/
+tests/*
+
+trash/
+trash/*
+
 # Ctags
 tags
