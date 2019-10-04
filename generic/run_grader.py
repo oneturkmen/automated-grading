@@ -22,10 +22,10 @@ run = True
 test_names = [
     "t_1.in", "t_2.in",
     "t_3.in", "t_4.in",
-    "t_4.in", "t_5.in",
-    "t_6.in"
+    "t_5.in", "t_6.in",
+    "t_7.in", "t_8.in",
+    "t_9.in", "t_10.in"
 ]
-
 
 """
 >>>> Running tests ... DO NOT CHANGE UNLESS YOU KNOW WHAT YOU DO <<<<
@@ -52,16 +52,19 @@ for d in os.listdir():
     for c_files in f:
 
         kernighan = c_files.split("/")
-        dir_of_exe = c_files[:len(kernighan[-1]) + 2]
+        dir_of_exe = kernighan[0] + "/"
+        #dir_of_exe = c_files[:len(kernighan[-1]) + 2]
 
         c_files = kernighan[-1]
         out_name = c_files[:-2] + ".out"
 
         # Debug info
         print("Student " + str(i) + " " + out_name)
+        i += 1
 
         if debug:
             print("C_files ", c_files)
+            print("Kernighan ", kernighan)
             print("Directory ", dir_of_exe)
             print("Out name ", out_name)
             print()
